@@ -1,4 +1,4 @@
-class EndPoint {
+class EndPoints {
   static String baseUrl = "https://student.valuxapps.com/api";
   static String authorization =
       "hXWevLgBGhYouglgr2VPASeMXXPobhIDgK9yeQuYVWz2cS2kKlrN2uvDttnXCliMksPWtL";
@@ -20,5 +20,5 @@ class ApiKey {
   static String status = "status";
   static String errorMessage = "ErrorMessage";
   static String token = "token";
-  static String isFirstTime = "isFirstTime";
+  static String isFirstTimeOnboarding = "isFirstTimeOnboarding";
 }

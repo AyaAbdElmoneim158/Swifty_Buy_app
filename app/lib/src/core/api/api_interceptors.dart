@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import '../utils/helpers/cache_helper.dart';
-import 'end_ponits.dart';
+import 'end_points.dart';
 
 class ApiInterceptor extends Interceptor {
   @override

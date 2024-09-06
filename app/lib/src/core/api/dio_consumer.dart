@@ -2,13 +2,13 @@ import 'package:dio/dio.dart';
 import '../errors/exceptions.dart';
 import 'api_consumer.dart';
 import 'api_interceptors.dart';
-import 'end_ponits.dart';
+import 'end_points.dart';
 
 class DioConsumer extends ApiConsumer {
   final Dio dio;
 
   DioConsumer({required this.dio}) {
-    dio.options.baseUrl = EndPoint.baseUrl;
+    dio.options.baseUrl = EndPoints.baseUrl;
     dio.interceptors.add(ApiInterceptor());
     dio.interceptors.add(
       LogInterceptor(

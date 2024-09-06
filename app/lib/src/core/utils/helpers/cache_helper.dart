@@ -1,11 +1,12 @@
+import 'package:app/injection_container.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CacheHelper {
-  static SharedPreferences? sharedPreferences;
+  static SharedPreferences? sharedPreferences = sl<SharedPreferences>();
 
-  static init() async {
-    sharedPreferences = await SharedPreferences.getInstance();
-  }
+  // static init() async {
+  //   sharedPreferences = await SharedPreferences.getInstance();
+  // }
 
   static dynamic getData({required String key}) {
     return sharedPreferences?.get(key);
