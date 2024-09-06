@@ -1,7 +1,6 @@
 import 'package:app/src/features/splash/presentation/view/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import '../../../features/auth/onboarding/presentation/view/onboarding/onboarding_view.dart';
 import '../../../features/splash/data/repos/splash_repo/splash_repo_impl.dart';
 import 'routes.dart';
 
@@ -18,7 +17,6 @@ class AppRouter {
         return pageTransition(settings, const OnboardingView());
       case Routes.loginView:
         return pageTransition(settings, const LoginView());
-
       case Routes.noFoundRoute:
       default:
         return pageTransition(settings, const NotFoundPage());
