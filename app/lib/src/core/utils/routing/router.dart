@@ -1,6 +1,7 @@
 import 'package:app/src/features/splash/presentation/view/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
+import '../../../features/auth/presentation/view/onboarding/onboarding_view.dart';
 import '../../../features/splash/data/repos/splash_repo/splash_repo_impl.dart';
 import 'routes.dart';
 

@@ -9,9 +9,9 @@ class SplashCubit extends Cubit<SplashState> {
   SplashRepo splashRepo;
 
   void screenRedirect(context) {
-    Timer(const Duration(seconds: 3), () {
+    emit(SplashRedirect());
+    Timer(const Duration(seconds: 5), () {
       splashRepo.screenRedirect(context);
     });
-    emit(SplashRedirect());
   }
 }

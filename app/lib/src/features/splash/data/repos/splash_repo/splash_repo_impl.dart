@@ -16,7 +16,7 @@ class SplashRepoImpl extends SplashRepo {
     } else if (isFirstTimeOnboarding != null) {
       Navigator.pushReplacementNamed(context, Routes.loginView);
     } else {
-      CacheHelper.saveData(key: ApiKey.isFirstTimeOnboarding, value: true);
+      // CacheHelper.saveData(key: ApiKey.isFirstTimeOnboarding, value: true);
       Navigator.pushReplacementNamed(context, Routes.onboarding);
     }
 
@@ -41,13 +41,13 @@ class NavigationMenu extends StatelessWidget {
       const DefaultWidgets(widgetName: "NavigationMenu 🧭");
 }
 
-class OnboardingView extends StatelessWidget {
+/*class OnboardingView extends StatelessWidget {
   const OnboardingView({super.key});
 
   @override
   Widget build(BuildContext context) =>
       const DefaultWidgets(widgetName: "OnboardingView 🛫");
-}
+}*/
 
 class DefaultWidgets extends StatelessWidget {
   const DefaultWidgets({super.key, this.widgetName = "widgetName"});
